@@ -1,0 +1,4 @@
+.item {
+    composes: root from '../Gallery/item.module.css';
+    composes: px-[0.5rem] from global;
+}

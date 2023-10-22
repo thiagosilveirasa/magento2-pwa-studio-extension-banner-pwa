@@ -1,0 +1,70 @@
+.root {
+    composes: lg_gap-sm from global;
+    composes: grid from global;
+    composes: grid-cols-auto from global;
+    composes: grid-rows-1 from global;
+    composes: relative from global;
+    grid-template-areas:
+        'main';
+}
+
+.carouselContainer {
+    composes: grid from global;
+    grid-area: main;
+}
+
+.imageContainer {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.currentLink {
+    grid-area: 1 / 1 / 2 / 4;
+}
+
+.currentBanner {
+    composes: block from global;
+    composes: object-center from global;
+    composes: object-contain from global;
+    composes: w-full from global;
+    composes: lg_object-top from global;
+}
+
+.currentBanner_placeholder {
+    composes: currentBanner;
+
+    composes: bg-subtle from global;
+}
+
+.previousButton,
+.nextButton {
+    composes: flex from global;
+    composes: outline-none from global;
+    composes: z-foreground from global;
+}
+
+.previousButton {
+    composes: justify-start from global;
+    composes: ml-sm from global;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.nextButton {
+    composes: justify-end from global;
+    composes: mr-sm from global;
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.chevron {
+    composes: root from '@magento/venia-ui/lib/components/Icon/icon.module.css';
+
+    composes: border-2 from global;
+    composes: border-solid from global;
+    composes: border-transparent from global;
+    composes: self-center from global;
+}
+
+.nextButton:focus > .chevron,
+.previousButton:focus > .chevron {
+    box-shadow: 0 0 4px 2px rgb(var(--venia-global-color-teal));
+    border-radius: 0.5rem;
+}

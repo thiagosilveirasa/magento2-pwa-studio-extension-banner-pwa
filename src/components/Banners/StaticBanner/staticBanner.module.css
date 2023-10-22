@@ -1,0 +1,26 @@
+.root {   
+
+}
+
+.imageContainer {
+    composes: flex from global;
+    composes: justify-center from global;
+}
+
+.link {
+
+}
+
+.banner {
+
+}
+
+.banner_placeholder {
+    composes: banner;
+}
+
+@media screen and (max-width: 960px) {
+    .root {   
+        /* height: 290px; */
+    }
+}

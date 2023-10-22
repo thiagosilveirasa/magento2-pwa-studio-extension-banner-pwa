@@ -1,0 +1,25 @@
+.root {
+
+}
+
+.container {
+
+}
+
+.image {
+
+}
+
+.loaded {
+    composes: left-0 from global;
+    composes: top-0 from global;
+
+    visibility: visible;
+}
+
+.notLoaded {
+    composes: absolute from global;
+    composes: loaded;
+
+    visibility: hidden;
+}

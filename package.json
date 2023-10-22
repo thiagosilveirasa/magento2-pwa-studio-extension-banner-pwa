@@ -1,0 +1,34 @@
+{
+  "name": "@thiagosilveira/banner-pwa",
+  "version": "1.0.0",
+  "description": "A banner list extension for a PWA Studio storefront",
+  "author": "Thiago Silveira (https://br.linkedin.com/in/thiagosilveirasa)",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "pwa-studio": {
+    "targets": {
+      "intercept": "src/intercept.js"
+    }
+  },
+  "scripts": {
+    "clean": " "
+  },
+  "peerDependencies": {
+    "@apollo/client": "^3.5.0",
+    "@magento/pagebuilder": "^8.2.0",
+    "@magento/peregrine": "^13.1.1",
+    "@magento/pwa-buildpack": "^11.4.2",
+    "@magento/venia-ui": "^10.2.0",
+    "graphql-tag": "^2.12.5",
+    "jarallax": "^1.11.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-feather": "^2.0.3",
+    "react-intl": "^5.20.0",
+    "react-slick": "^0.28.0"
+  },
+  "dependencies": {
+    "react-required-if": "^1.0.3"
+  },
+  "devDependencies": {}
+}
